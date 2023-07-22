@@ -1,0 +1,374 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* display:flex; */
+    align-items: center;
+    background-color: rgb(248, 202, 143);
+  }
+  .header{
+    display: flex;
+    justify-content: space-around;
+    min-width: 300px;
+    margin-top: 8px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Form Styles */
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .form-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .input-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .input-row1 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-bottom: 10px;
+  }
+  
+  .input-row label {
+    width: 80px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .input-row input,
+  .input-row select {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-row select {
+    width: auto;
+  }
+  .input-row1 input,
+  .input-row1 select {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-row1 select {
+    width: auto;
+  }
+  
+  .form-container button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+
+
+
+  .text_conatiner{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+ 
+
+  .add-todo input[type="text"],
+  .filters input[type="text"],
+  .filters select {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-todo button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-todo button:hover {
+    background-color: #45a049;
+  }
+
+
+
+  .todo-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  /* .todo-list {
+    margin-top: 20px;
+  } */
+  
+  .todo-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #da4848;
+    background-color: #acf2ae;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .todo-item.completed {
+    background-color: #f2f2f2;
+    text-decoration: line-through;
+  }
+  
+  .todo-item .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-item .actions button {
+    margin-left: 5px;
+    padding: 4px 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todo-item .actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* .filters {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .filters label {
+    margin-right: 5px;
+  }
+  
+  .filters input[type="date"] {
+    margin-right: 10px;
+  }
+  
+  .filters select {
+    margin-left: 5px;
+  } */
+
+  /* Filter Section Styles */
+
+.filter-section {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .filter-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .filter-section label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .filter-section input[type="date"],
+  .filter-section input[type="text"],
+  .filter-section select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .filter-section select {
+    width: auto;
+  }
+  
+  .filter-section button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-section button:hover {
+    background-color: #45a049;
+  }
+
+
+
+   /* Style for the Subtasks */
+ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .subtask-list{
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  .subtask-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .subtask-item.completed {
+    text-decoration: line-through;
+    color: #777;
+  }
+
+  .buttons-contanier{
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .buttons-contanier button{
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+  }
+  .buttons-contanier button:hover{
+    background-color: #0056b3;
+  }
+
+  /* Activity Logs Section */
+/* .activity-logs {
+    margin-top: 20px;
+  } */
+
+  .activity-logs {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .activity-logs h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .log-item {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+  }
+  
+  .log-item span {
+    margin-right: 10px;
+  }
+
+/* Search Section Styles */
+
+.search-section {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .search-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .search-section input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-section button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-section button:hover {
+    background-color: #45a049;
+  }
+
+  /* Responsive layout for small screens */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  

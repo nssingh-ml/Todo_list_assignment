@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List Application</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1 style="margin:auto">Todo List</h1>
+        </div>
+    </div>
+    <!-- Todo Form Section -->
+    <div class="form-container">
+        <!-- <h2>Add Todo</h2> -->
+        <div class="input-row">
+        <label for="todoInput">Task:</label>
+        <input type="text" id="todoText" placeholder="Enter your task here">
+        </div>
+        <div class="input-row">
+        <label for="dueDateInput">Due Date:</label>
+        <input type="text" id="dueDate" placeholder="Enter due date here">
+        <label for="priorityInput">Priority:</label>
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        </div>
+        <div class="input-row1">
+        <label for="categoryInput">Category:</label>
+        <input type="text" id="category" placeholder="Enter category here">
+        <label for="tagsInput">Tags:</label>
+        <input type="text" id="tags" placeholder="Enter tags here">
+        </div>
+        <button id="addTodoButton">Add Todo</button>
+    </div>
+  <!-- <div class="container"></div> -->
+    <!-- Add Todo Section -->
+    <!-- <div class="add-todo">
+        <div class="text_container">
+            <p>Task</p>
+            <input type="text" id="todoText" placeholder="Enter your todo">
+        </div>
+      <input type="text" id="dueDate" placeholder="Due date (e.g., 'tomorrow', '13th Jan 2023 3 pm')">
+      <input type="text" id="priority" placeholder="Priority (low, medium, high)">
+      <input type="text" id="category" placeholder="Category">
+      <input type="text" id="subtasks" placeholder="Subtasks (comma-separated)">
+      <input type="text" id="tags" placeholder="Tags (comma-separated)">
+      <button id="addTodoButton">Add Todo</button>
+    </div> -->
+
+    
+
+    <!-- Filters Section -->
+    <div class="filter-section">
+        <h2>Filters</h2>
+        <label for="startDateFilter">Start Date:</label>
+        <input type="date" id="startDateFilter">
+        <label for="endDateFilter">End Date:</label>
+        <input type="date" id="endDateFilter">
+        <label for="categoryFilter">Category:</label>
+        <input type="text" id="categoryFilter" placeholder="add category to filter">
+        <label for="priorityFilter">Priority:</label>
+        <select id="priorityFilter">
+          <option value="">All</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="filterButton">Filter</button>
+    </div>
+      
+        <!-- <h2>Sort</h2> -->
+        <div class="buttons-contanier">
+            <!-- Search Section -->
+            <div class="search-section">
+                <h2>Search</h2>
+                <input type="text" id="searchQuery" placeholder="Enter task name,tags etc.. to search tasks">
+                <button onclick="performSearch()">Search</button>
+            
+                <label for="sortBy">Sort By:</label>
+                <select id="sortBy">
+                <option value="dueDate">Due Date</option>
+                <option value="priority">Priority</option>
+                </select>
+                <button id="sortButton">Sort</button>
+
+                <!-- View Backlogs Button -->
+                <button id="viewBacklogsButton">View Backlogs</button>
+            </div>
+        </div>
+        <!-- Activity Logs Section -->
+        <div class="activity-logs">
+            <h2>Activity Logs</h2>
+            <button onclick="toggleActivityLogs()">View Activity Logs</button>
+            <div id="activityLogs" style="display: none;"></div>
+        </div>
+    <!-- </div> -->
+    <!-- <div class="filters">
+      <h2>Filters</h2>
+      <label for="dueDateFilter">Due Date:</label>
+      <input type="date" id="dueDateFilter">
+      <label for="categoryFilter">Category:</label>
+      <input type="text" id="categoryFilter">
+      <label for="priorityFilter">Priority:</label>
+      <select id="priorityFilter">
+        <option value="">All</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </div> -->
+    <!-- Todo List Section -->
+    <div class="todo-list" id="todoList">
+        <!-- Todo items will be dynamically added here -->
+      </div>
+  </div>
+  <script src="script1.js"></script> 
+</body>
+</html>
