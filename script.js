@@ -220,6 +220,11 @@ function getDueDate(dueDateInput) {
       todoTextElement.textContent = todo.todoText;
       todoItem.appendChild(todoTextElement);
 
+
+      // Display flex-direction: column for each main task
+        todoItem.style.display = 'flex';
+        todoItem.style.flexDirection = 'column';
+
     //   adding subtask
     // Add Subtask button
     const addSubtaskButton = document.createElement('button');
@@ -300,6 +305,17 @@ function getDueDate(dueDateInput) {
   
       const actionsContainer = document.createElement('div');
       actionsContainer.className = 'actions';
+
+
+      // Create the priority element
+        const priorityElement = document.createElement('div');
+        priorityElement.textContent = `Priority: ${todo.priority}`;
+        todoItem.appendChild(priorityElement);
+
+        // Create the category element
+        const categoryElement = document.createElement('div');
+        categoryElement.textContent = `Category: ${todo.category}`;
+        todoItem.appendChild(categoryElement);
   
       const completeButton = document.createElement('button');
       completeButton.textContent = todo.isCompleted ? 'Undone' : 'Done';
